@@ -11,6 +11,8 @@ defmodule UnaWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+
+    resources "/topics", UnaWeb.TopicController, only: [:index]
   end
 
   scope "/", UnaWeb do
