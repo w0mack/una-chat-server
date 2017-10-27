@@ -2,7 +2,7 @@ defmodule UnaWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", UnaWeb.RoomChannel
+  channel "chat:*", UnaWeb.ChatChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
