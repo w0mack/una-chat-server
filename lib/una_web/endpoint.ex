@@ -38,6 +38,7 @@ defmodule UnaWeb.Endpoint do
     key: "_una_key",
     signing_salt: "bsYf+5u+"
 
+  plug CORSPlug
   plug UnaWeb.Router
 
   @doc """
