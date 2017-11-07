@@ -8,7 +8,7 @@ defmodule UnaWeb.TopicControllerTest do
   describe "index" do
     test "lists all topics", %{conn: conn} do
       conn = get conn, topic_path(conn, :index)
-      assert json_response(conn, 200)["data"] == ["general", "specific"]
+      assert json_response(conn, 200)["data"] == ["fashion", "walking while texting", "various smells"]
     end
   end
 end
